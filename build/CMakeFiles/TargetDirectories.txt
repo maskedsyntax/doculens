@@ -1,0 +1,3 @@
+/home/batman/maskedsyntax/doculens/build/CMakeFiles/document_scanner.dir
+/home/batman/maskedsyntax/doculens/build/CMakeFiles/edit_cache.dir
+/home/batman/maskedsyntax/doculens/build/CMakeFiles/rebuild_cache.dir
