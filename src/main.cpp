@@ -11,7 +11,7 @@ int main(int argc, char **argv) {
   if (argc > 1) {
     url = argv[1];
   } else {
-    url = "/home/aftaab/8DayPlan/UniProjects/DocumentScanner/test_video.mp4";
+    url = "/home/batman/maskedsyntax/doculens/testvideo.mp4";
   }
 
   cv::VideoCapture cap(url);
