@@ -68,7 +68,7 @@ std::vector<cv::Point> getContours(const cv::Mat &img, cv::Mat &imgContour) {
     if (!cv::isContourConvex(approx))
       continue;
 
-    // Bounding rectangle – reject if it touches the border
+    // Bounding rectangle => reject if it touches the border
     cv::Rect bound = cv::boundingRect(approx);
     int borderMargin = 8;
     if (bound.x <= borderMargin || bound.y <= borderMargin ||
@@ -77,7 +77,6 @@ std::vector<cv::Point> getContours(const cv::Mat &img, cv::Mat &imgContour) {
       continue;
     }
 
-    // Rough side length and aspect ratio checks
     double w1 = cv::norm(approx[0] - approx[1]);
     double w2 = cv::norm(approx[2] - approx[3]);
     double h1 = cv::norm(approx[1] - approx[2]);
@@ -99,7 +98,6 @@ std::vector<cv::Point> getContours(const cv::Mat &img, cv::Mat &imgContour) {
   }
 
   if (!biggest.empty()) {
-    // Highlight the chosen document contour in green and thicker
     cv::drawContours(imgContour, std::vector<std::vector<cv::Point>>{biggest},
                      -1, cv::Scalar(0, 255, 0), 4);
   }
@@ -165,7 +163,6 @@ cv::Mat getWarp(const cv::Mat &img, const std::vector<cv::Point> &biggest,
     return imgWarp;
   }
 
-  // Optional: crop 20 pixels from all sides then resize back
   const int cropMargin = 20;
   cv::Rect roi(cropMargin, cropMargin, frameSize.width - 2 * cropMargin,
                frameSize.height - 2 * cropMargin);
@@ -182,7 +179,6 @@ cv::Mat getWarp(const cv::Mat &img, const std::vector<cv::Point> &biggest,
   return imgCropped;
 }
 
-// Helper to ensure an image is BGR with desired size
 static cv::Mat prepareImage(const cv::Mat &img, const cv::Size &size,
                             float scale) {
   cv::Mat resized, colored;

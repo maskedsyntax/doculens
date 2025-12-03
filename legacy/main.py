@@ -4,8 +4,6 @@ import numpy as np
 frameheight = 640
 framewidth = 480
 
-# Add your custom path here
-# where the video you want is stored.
 url = "/home/batman/maskedsyntax/doculens/testvideo.mp4"
 
 cap = cv2.VideoCapture(url)

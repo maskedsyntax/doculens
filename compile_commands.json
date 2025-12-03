@@ -1,0 +1,34 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/home/batman/maskedsyntax/doculens/include",
+      "-isystem",
+      "/usr/include/opencv4",
+      "-std=gnu++17",
+      "-c",
+      "-o",
+      "CMakeFiles/document_scanner.dir/src/document_scanner.cpp.o",
+      "/home/batman/maskedsyntax/doculens/src/document_scanner.cpp"
+    ],
+    "directory": "/home/batman/maskedsyntax/doculens/build",
+    "file": "/home/batman/maskedsyntax/doculens/src/document_scanner.cpp",
+    "output": "/home/batman/maskedsyntax/doculens/build/CMakeFiles/document_scanner.dir/src/document_scanner.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/home/batman/maskedsyntax/doculens/include",
+      "-isystem",
+      "/usr/include/opencv4",
+      "-std=gnu++17",
+      "-c",
+      "-o",
+      "CMakeFiles/document_scanner.dir/src/main.cpp.o",
+      "/home/batman/maskedsyntax/doculens/src/main.cpp"
+    ],
+    "directory": "/home/batman/maskedsyntax/doculens/build",
+    "file": "/home/batman/maskedsyntax/doculens/src/main.cpp",
+    "output": "/home/batman/maskedsyntax/doculens/build/CMakeFiles/document_scanner.dir/src/main.cpp.o"
+  }
+]

@@ -19,7 +19,7 @@ std::vector<cv::Point2f> reorder(const std::vector<cv::Point> &points);
 cv::Mat getWarp(const cv::Mat &img, const std::vector<cv::Point> &biggest,
                 const FrameSize &frameSize);
 
-// 2D stacking like your Python stackImages
+// 2D stacking
 cv::Mat stackImages(float scale,
                     const std::vector<std::vector<cv::Mat>> &imgArray);
 
